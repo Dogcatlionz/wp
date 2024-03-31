@@ -1,11 +1,11 @@
 function Add(a, b) 
 {
-    var i, j, c = []
+    var  c = []
     
-    for (i = 0; i < a.length; i++) 
+    for (let i = 0; i < a.length; i++) 
     {
-        c[i] = []
-        for (j=0; j<a[i].length; j++) 
+        c[i] = [];
+        for (let j=0; j<a[i].length; j++) 
         {
             c[i][j] = a[i][j] + b[i][j]
         }
