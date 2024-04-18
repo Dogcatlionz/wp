@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+* {
+    margin: 0;
+    padding: 0;
+}
 
+.sidebar {
+    position: relative; /* 让子元素绝对定位相对于这个容器 */
+    width: 50px;
+    height: 100vh;
+    background: Lightcoral;
+    transition: width 1s;
+}
+
+.sidebar:hover {
+    width: 200px;
+}
+
+div a {
+    max-width: none;
+    white-space: nowrap;
+}
+.sidebar:before { 
+    content: "☰"; 
+    position: absolute; /* 绝对定位 */
+    top: 10px; 
+    left: 10px; 
+    font-size: 24px;
+}
+
+.link {
+    padding-top: 40px; 
+    visibility: hidden; 
+    }
+
+.link a {
+    display: block; 
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+
+.sidebar:hover .link {
+    visibility: visible;
+}
+
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="link">
+        <a href="https://github.com/Dogcatlionz">我的github</a>
+        <a href="https://dogcatlionz.github.io/wp/html/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9.html">自我介绍</a>
+    </div>
+</div>
+
+</body>
+</html>
