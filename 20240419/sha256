@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>SHA-256 雜湊計算器</title>
+</head>
+<body>
+    <h1>SHA-256 Hash</h1>
+    <label for="input">Data:</label>
+    <input type="text" id="input" oninput="calculateHash()">
+    <p id="hashResult"></p>
+
+    <script>
+        async function hash(string) {
+            const utf8 = new TextEncoder().encode(string);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', utf8);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            const hashHex = hashArray
+                .map((bytes) => bytes.toString(16).padStart(2, '0'))
+                .join('');
+            return hashHex;
+        }
+
+        async function calculateHash() {
+            const input = document.getElementById('input').value;
+            const hashValue = await hash(input);
+            document.getElementById('hashResult').innerText = `Hash: ${hashValue}`;
+        }
+    </script>
+</body>
+</html>
