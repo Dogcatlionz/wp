@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: relative; 
+    width: 50px;
+    height: 100vh;
+    background: Lightcoral;
+    transition: width 1s;
+}
+
+div a {
+    max-width: none;
+    white-space: nowrap;
+}
+.sidebar:before { 
+    content: "☰"; 
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    font-size: 24px;
+}
+
+.link {
+    padding-top: 40px; 
+    visibility: hidden; 
+    }
+
+.link a {
+    display: block; 
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.link a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .link.visible {
+    visibility: visible;
+}
+
+</style>
+</head>
+<body>
+
+<div class="sidebar" onclick="toggleSidebar()">
+    <div class="link">
+        <a href="https://github.com/Dogcatlionz">我的github</a>
+        <a href="https://dogcatlionz.github.io/wp/html/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9.html">自我介绍</a>
+    </div>
+</div>
+
+<script>
+let isWide = false;
+let sidebar = document.querySelector('.sidebar');
+let link = document.querySelector('.link');
+
+function toggleSidebar() {
+    if (!isWide) {
+        sidebar.style.width = "200px";
+        link.classList.add('visible');
+        isWide = true;
+    } else {
+        sidebar.style.width = "50px";
+        link.classList.remove('visible');
+        isWide = false;
+    }
+}
+</script>
+
+</body>
+</html>
