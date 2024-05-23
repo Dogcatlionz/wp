@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+
+  const canvas = document.getElementById('myCanvas');
+
+  const ctx = canvas.getContext('2d');
+
+  ctx.beginPath();
+  ctx.arc(270, 330, 40, 0, 1 * Math.PI);
+  ctx.stroke();
+ 
+  ctx.fillStyle = 'gray';
+  ctx.fillRect(50, 30, 300, 180);
+
+  ctx.fillStyle = 'black';
+  ctx.fillRect(170, 90, 60, 240);
+  
+  ctx.fillStyle = 'gray';
+  ctx.fillRect(170, 90, 60, 120);
+  
+  ctx.beginPath();
+  ctx.arc(320, 350, 40, 0, 2 * Math.PI);
+  ctx.fillStyle = "red";
+  ctx.fill();
+  ctx.lineWidth = 4;
+  ctx.strokeStyle = "blue";
+  ctx.stroke();
+</script>
+
+</body>
+</html>
