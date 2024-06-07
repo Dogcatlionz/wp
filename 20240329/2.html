@@ -1,22 +1,19 @@
 <html>
 <body>
     <title>按鈕按下去會右移 10px</title>
-    <button onclick="big()">Button</button>
+    <button onclick="right()">Button</button>
     <script>
-        function big()
+        function right()
         {
-            height += 10;
-            width += 10;
-            b.style.height = height;
-            b.style.width = width;
+            left += 10;
+            b.style.left = left;
         }
 
-        let height = 50;
-        let width = 100;
+        let left = 10;
         let b = document.querySelector('button');
         b.style.position = 'absolute';
-        b.style.height = height;
-        b.style.width = width;
+        b.style.left = left;
+    </script>
     </script>
 </body>
 </html>
