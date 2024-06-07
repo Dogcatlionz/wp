@@ -1,18 +1,22 @@
 <html>
 <body>
     <title>按鈕按下去寬高都會變大 10px</title>
-    <button onclick="right()">Button</button>
+    <button onclick="big()">Button</button>
     <script>
-        function right()
+        function big()
         {
-            left += 10;
-            b.style.left = left;
+            height += 10;
+            width += 10;
+            b.style.height = height;
+            b.style.width = width;
         }
 
-        let left = 10;
+        let height = 50;
+        let width = 100;
         let b = document.querySelector('button');
         b.style.position = 'absolute';
-        b.style.left = left;
+        b.style.height = height;
+        b.style.width = width;
     </script>
 </body>
 </html>
