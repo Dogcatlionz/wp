@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>一個會自己到處移動的按鈕</title>
+  <style>
+    #movingButton {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+<button id="movingButton">button</button>
+
+<script>
+const button = document.getElementById('movingButton');
+
+let x = 0;
+let y = 0;
+let speedX = 8;
+let speedY = 8;
+
+function moveButton() {
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+
+    // 更新按鈕位置
+    x += speedX;
+    y += speedY;
+
+    if (x <= 0 || x >= windowWidth - button.offsetWidth) {
+        speedX = -speedX;
+    }
+    if (y <= 0 || y >= windowHeight - button.offsetHeight) {
+        speedY = -speedY;
+    }
+
+    // 更新按鈕位置
+    button.style.left = x + 'px';
+    button.style.top = y + 'px';
+
+    setTimeout(moveButton, 100);
+}
+
+moveButton();
+</script>
+
+</body>
+</html>
