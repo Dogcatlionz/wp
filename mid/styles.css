@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    background-image: url("台東.jpg");
+  }
+  
+  .footer {
+    background-color: #000000;
+    background-size: cover;
+    text-align: right;
+    color: white;
+    margin: 0;
+    padding: 1px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #000000;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .topnav button {
+    height: 45px;
+    width: 60px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    text-align: right;
+  }
+  
+  /* Create three unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Left and right column */
+  .column.side_left {
+    width: 20%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .column.side_right {
+    width: 20%;
+    background-color:#f2f2f2;
+  }
+  
+  .column.sidebar {
+    width: 100%; /* Initial state is 100% width */
+    height: 100vh;
+    color: black;
+    background: rgb(204, 204, 204);
+    transition: width 0.5s, opacity 0.5s; /* Add transition for opacity */
+    overflow: hidden;
+    opacity: 1; /* Initial state is fully visible */
+  }
+  
+  .column.sidebar a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 15px 5px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 60%;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side,
+    .column.middle {
+      width: 100%;
+    }
+  }
