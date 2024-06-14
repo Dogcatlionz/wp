@@ -10,7 +10,7 @@
 課程教材 | https://github.com/ccc112b/html2denojs <br/> https://www.w3schools.com/
 
 ## 關於期中作業
-我做的是個人網站，我使用了作業8時做的佈局，作業8是我基於W3School的範例，修改版面去完成老師要求的佈局，剩下均為原創，沒有參考其他資料。
+我做的是個人網站，我使用了作業8時做的佈局，作業8是我基於W3School的範例，修改版面去完成老師要求的佈局，而照片集的部分，我使用Copilot來做js的部分讓點擊畫面時，換下一張照片，剩下均為原創。
 * [網頁](https://dogcatlionz.github.io/wp/mid/%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99.html)
 * [原始碼](https://github.com/Dogcatlionz/wp/tree/master/mid)
 ***
