@@ -12,6 +12,11 @@ function nextImage() {
     showImage(currentIndex);
 }
 
+function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+}
+
 // 點擊照片左右切換
 images.forEach((img, i) => {
     img.addEventListener('click', () => {
@@ -23,3 +28,4 @@ images.forEach((img, i) => {
 
 // 初始顯示第一張照片
 showImage(currentIndex);
+
