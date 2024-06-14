@@ -1,4 +1,4 @@
-const images = document.querySelectorAll('.show img');
+const images = document.querySelectorAll('.slideshow img');
 let currentIndex = 0;
 
 function showImage(index) {
