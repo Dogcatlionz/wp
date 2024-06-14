@@ -28,4 +28,3 @@ images.forEach((img, i) => {
 
 // 初始顯示第一張照片
 showImage(currentIndex);
-
