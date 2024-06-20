@@ -40,3 +40,6 @@
 使用老師的專案，並修改成自己申請的api key，以及使用ChatGPT完成。
 * [原始碼](https://github.com/Dogcatlionz/wp/tree/master/20240517)
 * [網頁](https://dogcatlionz.github.io/wp/20240517/index.html)
+### 作業11：請閱讀 denoApiService + Blog 的程式碼，並寫下你的理解，然後為程式碼加上詳細的註解
+嘗試註解的程式碼有index.html、main.css和main.js
+* [原始碼](https://github.com/Dogcatlionz/wp/tree/master/20240531)
