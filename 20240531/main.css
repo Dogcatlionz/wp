@@ -1,0 +1,48 @@
+body {
+  padding: 80px; //邊框與內容的距離80px
+  font: 16px Helvetica, Arial; //字體大小16px
+}
+
+h1 {
+  font-size: 2em; //字體大小1.2em
+}
+
+h2 {
+  font-size: 1.2em; //字體大小1.2em
+}
+
+#posts {
+  margin: 0; //邊距為0
+  padding: 0; //內邊距為0
+}
+
+#posts li {
+  margin: 40px 0; 
+  padding: 0; //內邊距為0
+  padding-bottom: 20px; //下方內邊距增加20px
+  border-bottom: 1px solid #eee; //底部顏色為#eee
+  list-style: none;
+}
+
+#posts li:last-child {
+  border-bottom: none;
+}
+
+textarea {
+  width: 500px; //寬500px
+  height: 300px; //高300px
+}
+
+input[type=text],
+textarea {
+  border: 1px solid #eee;
+  border-top-color: #ddd; //上方顏色為#ddd
+  border-left-color: #ddd; //左方顏色為#ddd
+  border-radius: 2px;
+  padding: 15px; //內邊距15px
+  font-size: .8em; //字體大小.8em
+}
+
+input[type=text] {
+  width: 500px; //寬500px
+}
